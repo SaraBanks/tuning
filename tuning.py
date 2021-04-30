@@ -1,10 +1,10 @@
 import numpy as np
-from nested_dict import nested_dict
+from collections import OrderedDict
 ad=np.array([6,8,9,10,11,13])
 dg=ad
 gc=ad
 
-full=[]
+full=OrderedDict ()
 p=0
 for m in ad:
     for n in dg:
@@ -39,7 +39,7 @@ for f in range(len(full)):
         conde=(conde[-1:]+conde[:-1])
         r=r+1
     f=f+1
-dex=[]
+dex=OrderedDict()
 for c in range(len(conlist)):
     dex.append(conlist[c][3])
     c=c+1
